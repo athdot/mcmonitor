@@ -4,5 +4,11 @@
 
     </head>
     <body>
+        <iframe src="https://panel.freemcserver.net/server/console?id=338957" id="main" height="500" width="700" title="Iframe test?"></iframe>
+        <script>
+            function run(){
+                document.getElementById("main").contentWindow.startServer(338957, "console", this);
+            }
+        </script>
     </body>
 </html>
